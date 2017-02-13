@@ -201,7 +201,9 @@ public class GlideImageLoaderStrategy implements BaseImageLoaderStrategy {
             if (fromStream != null) {
                 try {
                     fromStream.close();
-                    toStream.close();
+                    if(toStream != null) {
+                        toStream.close();
+                    }
                 } catch (IOException e) {
                     e.printStackTrace();
                     fromStream = null;

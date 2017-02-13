@@ -27,5 +27,6 @@ dependencies {
     compile project(':libraryimage')
     //butterknife的库必须放在主工程
     compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.android.support:support-v4:25.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 }

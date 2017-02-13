@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Gallery</string>
+    <string name="tips_net_error">加载出错 点击屏幕重新加载</string>
+    <string name="gallery_image_retry">加载失败，点击重试</string>
+    <string name="save_str">保存</string>
+    <string name="save_image_succ">保存成功</string>
+    <string name="save_image_fail">保存失败</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
