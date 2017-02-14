@@ -27,7 +27,6 @@ public class ThreadPoolUtils {
 
     static {
         threadPool = AsyncTask.THREAD_POOL_EXECUTOR;
-        //threadPool = OkHttpUtils.getInstance().getOkHttpClient().dispatcher().executorService();
     }
 
     /**

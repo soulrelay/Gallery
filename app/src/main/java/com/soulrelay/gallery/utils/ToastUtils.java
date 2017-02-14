@@ -27,15 +27,9 @@ public class ToastUtils {
 
     public static void toast(Context context, CharSequence text) {
 
-//        View message = LayoutInflater.from(context).inflate(R.layout.bf_toast_layout, null);
-//
-//        TextView textView = (TextView) message.findViewById(R.id.bf_toast_message_text);
-//        textView.setText(text);
         if (toast == null) {
             toast = Toast.makeText(context.getApplicationContext(), "", Toast.LENGTH_SHORT);
         }
-//        toast.setGravity(Gravity.CENTER, 0, 0);
-//        toast.setView(message);
         toast.setText(text);
         toast.show();
 
