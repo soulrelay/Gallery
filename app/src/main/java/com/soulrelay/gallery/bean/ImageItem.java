@@ -2,10 +2,15 @@ package com.soulrelay.gallery.bean;
 
 
 /**
- * 图片信息
- * <p/>
- * ZhaoRuYang
- * 6/12/16 10:55 AM
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  图片信息
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class ImageItem extends BaseItem {
     private String brief;

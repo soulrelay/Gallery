@@ -27,9 +27,15 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * 图集
- * Created by chenchongli on 16/7/11.
- * modify by mazejia on 16/8/23
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  图集
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class GalleryActivity extends FragmentActivity implements View.OnClickListener,
         MyViewPager.OnNeedScrollListener,GalleryFragment.OnPhotoTapListener{

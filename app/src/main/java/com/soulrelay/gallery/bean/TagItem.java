@@ -3,10 +3,15 @@ package com.soulrelay.gallery.bean;
 import java.io.Serializable;
 
 /**
- * 标签
- * <p>
- * ZhaoRuYang
- * 10/18/16 11:26 AM
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  标签
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class TagItem implements Serializable {
     private long id;

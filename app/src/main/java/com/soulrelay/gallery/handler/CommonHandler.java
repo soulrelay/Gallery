@@ -9,9 +9,15 @@ import android.util.Log;
 import java.lang.ref.WeakReference;
 
 /**
- * 通用的Handler
- * ZhaoRuYang
- * 2015/11/28 20:12
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  通用的Handler
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class CommonHandler<T extends IHandlerMessage> extends Handler {
     private static final String TAG = CommonHandler.class.getSimpleName();

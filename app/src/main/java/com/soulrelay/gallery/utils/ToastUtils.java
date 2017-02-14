@@ -5,6 +5,17 @@ import android.content.Context;
 import android.view.Gravity;
 import android.widget.Toast;
 
+/**
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  Toast工具类
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
+ */
 public class ToastUtils {
     private static boolean is_Debug = false;
 

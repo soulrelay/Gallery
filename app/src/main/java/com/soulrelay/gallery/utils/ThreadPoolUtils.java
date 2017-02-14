@@ -9,10 +9,16 @@ import java.util.concurrent.Executor;
 
 
 /**
- * 线程池辅助类，整个应用程序就只有一个线程池去管理线程。 可以设置核心线程数、最大线程数、额外线程空状态生存时间，阻塞队列长度来优化线程池。
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  线程池辅助类，整个应用程序就只有一个线程池去管理线程。 可以设置核心线程数、最大线程数、额外线程空状态生存时间，阻塞队列长度来优化线程池。
  * 下面的数据都是参考Android的AsynTask里的数据。
- *
- * @author songlingjian
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class ThreadPoolUtils {
 

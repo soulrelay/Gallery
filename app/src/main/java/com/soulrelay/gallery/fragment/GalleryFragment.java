@@ -11,10 +11,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
-
 
 import com.soulrelay.gallery.R;
 import com.soulrelay.gallery.adapter.GalleryAdapter;
@@ -34,15 +31,19 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
 /**
- * 图集
- * Created by chenchongli on 7/12/16.
- * modify by mazejia on 8/15/16
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  图集
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class GalleryFragment extends Fragment implements IHandlerMessage, View.OnClickListener, DialogInterface.OnShowListener, DialogInterface.OnDismissListener,
         ViewPager.OnPageChangeListener, GalleryAdapter.OnGalleryAdapterCallback {
@@ -103,7 +104,7 @@ public class GalleryFragment extends Fragment implements IHandlerMessage, View.O
         Bundle bundle = getArguments();
         if (bundle != null) {
             gallery = (GalleryItem) bundle.getSerializable("gallery");
-          //  id = gallery.getId();
+            //  id = gallery.getId();
             initData();
         }
     }
@@ -132,14 +133,12 @@ public class GalleryFragment extends Fragment implements IHandlerMessage, View.O
     }
 
     private void updateCollectState() {
-            //需要补齐数据，因为有可能从web中来
-            gallery.setNimages(list.size());
-            if (gallery.getImages() == null) {
-                gallery.setImages(list.subList(0, 3));
-            }
+        //需要补齐数据，因为有可能从web中来
+        gallery.setNimages(list.size());
+        if (gallery.getImages() == null) {
+            gallery.setImages(list.subList(0, 3));
+        }
     }
-
-
 
 
     private void requestData() {

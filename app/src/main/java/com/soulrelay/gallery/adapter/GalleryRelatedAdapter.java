@@ -17,8 +17,15 @@ import com.soulrelay.library.imageloader.ImageLoaderUtil;
 import java.util.List;
 
 /**
- * 图集--推荐
- * Created by chenchongli on 16/8/8.
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  图集-推荐
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class GalleryRelatedAdapter extends BaseAdapter {
 

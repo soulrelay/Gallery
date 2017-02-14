@@ -6,10 +6,15 @@ import android.support.v4.app.FragmentManager;
 import java.util.List;
 
 /**
- * 主页直播Tab页
- *
- * @author ----zhaoruyang----
- * @date: 3/7/16
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  图集
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class TabHomeAdapter extends android.support.v4.app.FragmentStatePagerAdapter {
     private static final String TAG = "TabHomeAdapter";

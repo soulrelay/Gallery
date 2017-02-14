@@ -11,8 +11,15 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * 图片加载库的封装演示案例
- * Created by soulrelay on 2016/12/11 19:18
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class MainActivity extends AppCompatActivity {
 

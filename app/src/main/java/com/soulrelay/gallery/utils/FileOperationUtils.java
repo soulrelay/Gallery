@@ -38,9 +38,15 @@ import java.util.zip.ZipException;
 import java.util.zip.ZipFile;
 
 /**
- * 文件操作类
- *
- * @author 贾斌
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  文件操作类
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class FileOperationUtils {
 

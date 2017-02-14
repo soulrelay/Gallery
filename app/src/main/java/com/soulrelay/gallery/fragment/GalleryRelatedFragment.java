@@ -1,7 +1,5 @@
 package com.soulrelay.gallery.fragment;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,6 +8,17 @@ import android.view.ViewGroup;
 
 import com.soulrelay.gallery.R;
 
+/**
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  图集相关推荐
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
+ */
 public class GalleryRelatedFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,7 +68,7 @@ public class GalleryRelatedFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_gallery_related, container, false);
     }
 
-    public boolean isHasData(){
+    public boolean isHasData() {
         return true;
     }
 

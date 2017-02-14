@@ -7,10 +7,15 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 服务端七大基础的bean
- * <p/>
- * ZhaoRuYang
- * 6/12/16 4:29 PM
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  基础bean
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class BaseItem extends SuperItem implements Serializable {
     @SerializedName("publish_tm")

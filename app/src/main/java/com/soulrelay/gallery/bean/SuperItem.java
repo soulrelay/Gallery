@@ -6,24 +6,15 @@ import com.soulrelay.gallery.constants.Constants;
 import java.io.Serializable;
 
 /**
- * 超类
- * 用于表示该条目唯一，里面包含比赛类信息，七大基本类型，添加内容时，慎重！！！
- * <p>
- * <p>
- * 先考虑30秒。是否需要添加
- * <p>
- * <p>
- * <p>
- * 项目中，使用type+id形式可以全局确定唯一条目getOnlyKey()
- * <p>
- * <p>
- * 所有具有type+id的对象中：包含该的属性：type，id，title，image
- * <p>
- * <p>
- * <p>
- * ZhaoRuYang
- * <p>
- * 11/18/16 5:35 PM
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  超类 部分字段冗余，捡有用的看
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class SuperItem implements Serializable {
 

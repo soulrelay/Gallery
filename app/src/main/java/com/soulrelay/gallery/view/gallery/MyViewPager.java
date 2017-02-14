@@ -6,7 +6,15 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 
 /**
- * ViewPaper嵌套使用时，当里面的viewpaper未滑动到最后一个时，外面的viewpaper禁止滑动
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description: ViewPaper嵌套使用时，当里面的viewpaper未滑动到最后一个时，外面的viewpaper禁止滑动
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class MyViewPager extends ViewPager {
 

@@ -3,10 +3,15 @@ package com.soulrelay.gallery.bean;
 import java.util.List;
 
 /**
- * 该对象表示一个图集信息
- * <p/>
- * ZhaoRuYang
- * 6/12/16 10:53 AM
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  该对象表示一个图集信息
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class GalleryItem extends BaseItem {
     private long eventId;

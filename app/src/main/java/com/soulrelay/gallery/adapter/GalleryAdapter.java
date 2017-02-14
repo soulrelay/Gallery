@@ -18,8 +18,15 @@ import com.soulrelay.library.imageloader.glideprogress.ProgressLoadListener;
 import java.util.List;
 
 /**
- * 图集详情
- * Created by chenchongli on 16/8/9.
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  图集详情
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14         SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public class GalleryAdapter extends PagerAdapter {
 

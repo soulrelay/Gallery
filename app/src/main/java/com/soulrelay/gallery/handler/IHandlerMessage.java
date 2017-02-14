@@ -3,9 +3,15 @@ package com.soulrelay.gallery.handler;
 import android.os.Message;
 
 /**
- * Handler的消息回调
- * ZhaoRuYang
- * 2015/11/28 20:38
+ * Author:    SuS
+ * Version    V1.0
+ * Date:      17/2/14
+ * Description:  Handler的消息回调
+ * Modification  History:
+ * Date         	Author        		Version        	Description
+ * -----------------------------------------------------------------------------------
+ * 17/2/14          SuS                 1.0               1.0
+ * Why & What is modified:
  */
 public interface IHandlerMessage {
     void handlerCallback(Message msg);
