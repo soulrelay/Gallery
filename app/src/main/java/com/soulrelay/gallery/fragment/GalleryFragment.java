@@ -83,7 +83,7 @@ public class GalleryFragment extends Fragment implements IHandlerMessage, View.O
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
     private static String[] PERMISSIONS_STORAGE = {
             Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE };
+            Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
     public static GalleryFragment newInstance(@Nullable Bundle bundle) {
         GalleryFragment fragment = new GalleryFragment();
@@ -142,30 +142,8 @@ public class GalleryFragment extends Fragment implements IHandlerMessage, View.O
         requestData();
     }
 
-    private void updateCollectState() {
-        //需要补齐数据，因为有可能从web中来
-        gallery.setNimages(list.size());
-        if (gallery.getImages() == null) {
-            gallery.setImages(list.subList(0, 3));
-        }
-    }
-
 
     private void requestData() {
-   /*     mStartLoadTime = System.currentTimeMillis();
-        Map<String, String> map = new HashMap<>();
-        map.put(Net.Field.id, String.valueOf(id));
-        AsyncHttpRequest.doASynGetRequest(getActivity(), UrlContainer.GALLERY_LIST, map, true, new AsyncHttpRequest.CallBack() {
-            @Override
-            public void call(String data) {
-                onGetDataSucceeded(data);
-            }
-
-            @Override
-            public void fail(String ret) {
-                handler.obtainMessage(MSG_CALL_DATA_FAIL).sendToTarget();
-            }
-        });*/
         String data = "{\n" +
                 "  \"data\": {\n" +
                 "    \"image\": [\n" +
@@ -423,8 +401,8 @@ public class GalleryFragment extends Fragment implements IHandlerMessage, View.O
             @Override
             public void run() {
                 ImageLoaderUtil.getInstance().saveImage(getActivity(), url,
-                        Environment.getExternalStorageDirectory().getAbsolutePath() + "/bfsports",
-                        "bfsports" + System.currentTimeMillis(), new ImageSaveListener() {
+                        Environment.getExternalStorageDirectory().getAbsolutePath() + "/gallery",
+                        "pic" + System.currentTimeMillis(), new ImageSaveListener() {
                             @Override
                             public void onSaveSuccess() {
                                 handler.obtainMessage(MSG_PIC_SAVE_SUCC).sendToTarget();
@@ -468,7 +446,7 @@ public class GalleryFragment extends Fragment implements IHandlerMessage, View.O
 
     /**
      * Checks if the app has permission to write to device storage
-     *
+     * <p>
      * If the app does not has permission then the user will be prompted to
      * grant permissions
      *
@@ -483,22 +461,18 @@ public class GalleryFragment extends Fragment implements IHandlerMessage, View.O
             // We don't have permission so prompt the user
             GalleryFragment.this.requestPermissions(PERMISSIONS_STORAGE,
                     REQUEST_EXTERNAL_STORAGE);
-        }else{
+        } else {
             saveImage();
         }
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults)
-    {
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
 
-        if (requestCode == REQUEST_EXTERNAL_STORAGE)
-        {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED)
-            {
+        if (requestCode == REQUEST_EXTERNAL_STORAGE) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 saveImage();
-            } else
-            {
+            } else {
                 // Permission Denied
                 ToastUtils.toastCenter(getActivity(), R.string.permission_denied);
             }

@@ -62,7 +62,7 @@ public class FileOperationUtils {
             Gson gson = new Gson();
             t = gson.fromJson(jsonString, c);
         } catch (Exception e) {
-            Log.d(TAG, "zql fromJson() call Exception : " + e.getMessage());
+            Log.d(TAG, "fromJson() call Exception : " + e.getMessage());
             e.printStackTrace();
         }
         return t;

@@ -1,12 +1,8 @@
 package com.soulrelay.gallery.activity;
 
-import android.Manifest;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
@@ -38,7 +34,7 @@ import butterknife.ButterKnife;
  * Why & What is modified:
  */
 public class GalleryActivity extends FragmentActivity implements View.OnClickListener,
-        MyViewPager.OnNeedScrollListener,GalleryFragment.OnPhotoTapListener{
+        MyViewPager.OnNeedScrollListener, GalleryFragment.OnPhotoTapListener {
 
     @BindView(R.id.viewpager_photos)
     MyViewPager viewPager;
@@ -97,7 +93,7 @@ public class GalleryActivity extends FragmentActivity implements View.OnClickLis
         refresh();
     }
 
-    private void refresh(){
+    private void refresh() {
       /*  if(getIntent() == null){
             return;
         }
@@ -120,7 +116,7 @@ public class GalleryActivity extends FragmentActivity implements View.OnClickLis
 
        /* Bundle bundleRecommendation = new Bundle();
         bundleRecommendation.putLong("id", gallery.getId());*/
-        fragments.add(GalleryRelatedFragment.newInstance("",""));
+        fragments.add(GalleryRelatedFragment.newInstance("", ""));
 
         mCurrFragment = fragments.get(0);
     }
@@ -134,13 +130,13 @@ public class GalleryActivity extends FragmentActivity implements View.OnClickLis
     private void switchTitle(int position) {
         switch (position) {
             case 0:
-                if(isHideView){
+                if (isHideView) {
                     //若离开图集时，是隐藏状态，回去时还是隐藏状态
                     onDismissView();
                 }
                 break;
             case 1:
-                if(isHideView){
+                if (isHideView) {
                     //在图集隐藏了上方的view时，到图集推荐时需要显示出来
                     backLl.setVisibility(View.VISIBLE);
                 }
@@ -171,8 +167,8 @@ public class GalleryActivity extends FragmentActivity implements View.OnClickLis
                 return false;
             } else {
                 //当图集滑动到最后一个时，如果图集推荐没有内容，则禁止滑动
-                GalleryRelatedFragment relatedFragment = (GalleryRelatedFragment)fragments.get(1);
-                if(!relatedFragment.isHasData()){
+                GalleryRelatedFragment relatedFragment = (GalleryRelatedFragment) fragments.get(1);
+                if (!relatedFragment.isHasData()) {
                     return false;
                 }
             }
