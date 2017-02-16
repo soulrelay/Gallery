@@ -1,0 +1,2 @@
+# Gallery
+使用ImageLoaderUtil实现一个真正意义的图集功能，后续会更新readme和blog，持续完善和更新中
