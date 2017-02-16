@@ -14,11 +14,11 @@
 ## <font color=#C4573C size=5 face="黑体">图集功能简介</font>
 一般图集的入口是这样的：（不过这不是重点，我们主要实现点击进去的图集详情页）
 <center>
-![这里写图片描述](http://img.blog.csdn.net/20170216153433383?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvczAwMzYwM3U=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/soulrelay/Gallery/blob/master/app/src/main/res/raw/gallery1.png)
 </center>
 点击进入是这样的：
 <center>
-![这里写图片描述](http://img.blog.csdn.net/20170215200838740?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvczAwMzYwM3U=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/soulrelay/Gallery/blob/master/app/src/main/res/raw/gallery2.gif)
 </center>
 不要在意数据的不匹配，数据都是随便搞的，哈哈哈
 
@@ -34,7 +34,7 @@
 ### <font color=#C4573C size=4 face="黑体">Gallery中的页面UI结构</font>
 
 <center>
-![这里写图片描述](http://img.blog.csdn.net/20170216155931486?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvczAwMzYwM3U=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/soulrelay/Gallery/blob/master/app/src/main/res/raw/gallery3.png)
 </center>
 [参考源码，了解更多](https://github.com/soulrelay/Gallery)
 ### <font color=#C4573C size=4 face="黑体">通过ImageLoaderUtil提供的loadImageWithProgress实现图片加载的进度回调</font>
@@ -66,7 +66,7 @@
 ```
 进度加载效果图如下：
 <center>
-![这里写图片描述](http://img.blog.csdn.net/20170215200859084?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvczAwMzYwM3U=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/soulrelay/Gallery/blob/master/app/src/main/res/raw/gallery4.gif)
 </center>
 ### <font color=#C4573C size=4 face="黑体">通过ImageLoaderUtil提供的saveImage实现图片加载的本地保存</font>
 
@@ -99,7 +99,7 @@
 ```
 效果图如下：
 <center>
-![这里写图片描述](http://img.blog.csdn.net/20170215200919928?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvczAwMzYwM3U=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/soulrelay/Gallery/blob/master/app/src/main/res/raw/gallery5.gif)
 </center>
 ### <font color=#C4573C size=4 face="黑体"> Android 六点零 运行时权限处理</font>
 
