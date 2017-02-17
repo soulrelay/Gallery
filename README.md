@@ -28,6 +28,7 @@
 >* 伴随图片切换的标题简介切换
 >* 图集的保存、分享（暂无）、评论（暂无）、收藏（暂无）
 >* 当前图集浏览完毕，支持切换到相关的图集推荐（目前很简陋）
+>* 图集推荐同时又是一个进入图集详情页的入口
 
 ## <font color=#C4573C size=5 face="黑体">部分功能点分析</font>
 
@@ -108,7 +109,7 @@
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
-还需要在需要改权限的地方主动调用（详情请参考GalleryFragment，同时需要注意Fragment与Activity在申请运行时权限的不同，Activity中使用ActivityCompat.requestPermissions，而Fragment使用自己本身，如GalleryFragment.this.requestPermissions）
+还得在需要改权限的地方主动调用（详情请参考GalleryFragment，同时需要注意Fragment与Activity在申请运行时权限的不同，Activity中使用ActivityCompat.requestPermissions，而Fragment使用自己本身，如GalleryFragment.this.requestPermissions）
 否则会报（java.io.FileNotFoundException:open failed: EACCES (Permission denied)）
 
 上图即是在targetSdkVersion设置到23，在6.0系统的手机上运行，弹出授权dialog，只有允许才能保存图片成功，否在会报权限拒绝
@@ -207,7 +208,7 @@ public class MyViewPager extends ViewPager {
 }
 ```
 
-只有当GalleryFragment滑动到最后一个，且图集推荐中有内容才会滑动外层的ViewPager
+只有当GalleryFragment中的ViewPager滑动到最后一个，且图集推荐中有内容，才会触发外层ViewPager的滑动
 ```
 
     @Override
